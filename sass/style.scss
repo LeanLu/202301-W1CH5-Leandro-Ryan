@@ -91,11 +91,85 @@ $font-family-rubik: "Rubik", sans-serif;
   font-family: $font-family-rubik;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 @mixin orange-button-expand {
   @include orange-button();
   width: 10rem;
+}
+
+@mixin star {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+@mixin special-offer-template {
+  background-color: #fff8f1;
+  h3 {
+    color: #767e86;
+    font-family: "Mulish";
+    font-size: 1.7rem;
+    padding: 0.5rem 0rem;
+  }
+
+  &__star {
+    @include star();
+  }
+
+  &__description {
+    font-family: $font-family-rubik;
+    color: #172432;
+    padding: 2rem 0rem;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: $font-family-rubik;
+      padding: 0rem 0rem 1rem 0rem;
+
+      & p {
+        color: #767e86;
+        font-size: 1rem;
+      }
+
+      & div {
+        color: #ff7757;
+        font-size: 2rem;
+        padding: 0rem 0rem 0rem 0.5rem;
+      }
+    }
+  }
+
+  & nav {
+    @include orange-button();
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    padding: 2rem 0rem 0.7rem 0rem;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    div {
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+  }
 }
 
 html {
@@ -216,6 +290,8 @@ html {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 5rem 0rem;
+
   &__title {
     width: 288px;
     height: 106px;
@@ -228,6 +304,7 @@ html {
 
     color: #172432;
   }
+
   .section2-allimages {
     &__hidden {
       display: none;
@@ -253,9 +330,11 @@ html {
 
     color: #767e86;
   }
+
   &__desktopbutton {
     display: none;
   }
+
   &__ul {
     display: flex;
     gap: 2rem;
@@ -298,6 +377,8 @@ html {
 
   &-destination {
     &-lisbon {
+      background-color: #fff8f1;
+
       h3 {
         color: #767e86;
         font-family: "Mulish";
@@ -305,10 +386,8 @@ html {
         padding: 0.5rem 0rem;
       }
 
-      div {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+      &__star {
+        @include star();
       }
 
       &__description {
@@ -319,20 +398,26 @@ html {
 
       &__price {
         display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        font-family: $font-family-rubik;
-        padding: 0rem 0rem 1rem 0rem;
+        flex-direction: column;
 
-        & p {
-          color: #767e86;
-          font-size: 1rem;
-        }
+        div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 0.5rem;
+          font-family: $font-family-rubik;
+          padding: 0rem 0rem 1rem 0rem;
 
-        & span {
-          color: #ff7757;
-          font-size: 2rem;
-          padding: 0rem 0rem 0rem 0.5rem;
+          & p {
+            color: #767e86;
+            font-size: 1rem;
+          }
+
+          & div {
+            color: #ff7757;
+            font-size: 2rem;
+            padding: 0rem 0rem 0rem 0.5rem;
+          }
         }
       }
 
@@ -488,6 +573,77 @@ html {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+    }
+  }
+
+  .special-offer {
+    display: grid;
+    grid-template-areas:
+      "nav-menu title title"
+      "destination destination destination";
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &-nav-menu {
+      grid-area: nav-menu;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      height: 100%;
+    }
+
+    &-title {
+      grid-area: title;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      h2 {
+        font-size: 3.5rem;
+      }
+
+      p {
+        padding: 1rem 0rem 0rem 0rem;
+        font-size: 1.4rem;
+      }
+    }
+
+    &-destination {
+      grid-area: destination;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+
+      &-lisbon {
+        h3 {
+          font-size: 1.4rem;
+          padding: 2rem 0rem 0.7rem 0rem;
+        }
+
+        &__price {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+
+          div {
+            display: flex;
+            align-items: center;
+            padding: 0;
+          }
+        }
+      }
+
+      &-athens {
+        display: flex;
+        flex-direction: column;
+        @include special-offer-template();
+      }
+
+      &-rome {
+        display: flex;
+        flex-direction: column;
+        @include special-offer-template();
+      }
     }
   }
 }
