@@ -189,6 +189,7 @@ html {
           font-size: 2rem;
           color: white;
           border: none;
+          cursor: pointer;
         }
       }
     }
@@ -225,6 +226,53 @@ html {
     line-height: 21px;
 
     color: #767e86;
+  }
+}
+
+.special-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem;
+  margin: 5rem 0rem;
+
+  &-title {
+    font-size: 1.5rem;
+
+    & h2 {
+      text-decoration-line: underline;
+      text-decoration-color: #ff7757;
+      text-decoration-style: solid;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 1rem;
+      padding: 0rem 0rem 2rem 0rem;
+      color: #172432;
+    }
+
+    & p {
+      font-size: 1.2rem;
+      color: #767e86;
+    }
+  }
+
+  &-destination {
+    &-athens {
+      display: none;
+    }
+
+    &-rome {
+      display: none;
+    }
+  }
+
+  &-nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   }
 }
 
