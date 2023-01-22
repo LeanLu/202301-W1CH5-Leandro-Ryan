@@ -114,24 +114,29 @@ html {
       display: none;
     }
   }
+
   &-lower {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 5rem;
     padding: 5rem 0rem;
+
     &-title {
       color: #ffffff;
+
       &__h1 {
         font-family: "Playfair Display";
         font-size: 2.2rem;
         padding: 0rem 1rem;
       }
+
       &__p {
         padding: 0rem 1rem;
         font-family: $font-family-rubik;
       }
     }
+
     &-form {
       display: flex;
       flex-direction: column;
@@ -141,7 +146,7 @@ html {
       justify-content: center;
       align-items: flex-start;
       margin: 1rem;
-      padding: 1rem;
+
       &__input {
         font-family: $font-family-rubik;
         color: #767e86;
@@ -150,23 +155,41 @@ html {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 1rem;
-        & > input {
-          border: none;
-          border-bottom: 1px solid #767e86;
-          width: 240px;
+        gap: 2rem;
+        padding: 1.5rem;
+        width: 100%;
+
+        & > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          gap: 0.5rem;
+
+          & > input {
+            border: none;
+            border-bottom: 1px solid #767e86;
+            width: 100%;
+          }
         }
       }
-      &__nav {
+
+      &__submit {
         font-family: $font-family-playfair;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width: 240px;
+        justify-content: space-around;
+        width: 100%;
         background-color: $primary-color-salmon;
-        & p {
+        border-radius: 0rem 0rem 1rem 1rem;
+        padding: 2rem 0rem;
+
+        & > input {
+          background-color: $primary-color-salmon;
           font-size: 2rem;
           color: white;
+          border: none;
         }
       }
     }

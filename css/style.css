@@ -135,7 +135,6 @@ html {
   justify-content: center;
   align-items: flex-start;
   margin: 1rem;
-  padding: 1rem;
 }
 .header-lower-form__input {
   font-family: "Rubik", sans-serif;
@@ -145,24 +144,38 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
+  padding: 1.5rem;
+  width: 100%;
 }
-.header-lower-form__input > input {
+.header-lower-form__input > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.5rem;
+}
+.header-lower-form__input > div > input {
   border: none;
   border-bottom: 1px solid #767e86;
-  width: 240px;
+  width: 100%;
 }
-.header-lower-form__nav {
+.header-lower-form__submit {
   font-family: "Playfair Display", serif;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 240px;
+  justify-content: space-around;
+  width: 100%;
   background-color: #ff7757;
+  border-radius: 0rem 0rem 1rem 1rem;
+  padding: 2rem 0rem;
 }
-.header-lower-form__nav p {
+.header-lower-form__submit > input {
+  background-color: #ff7757;
   font-size: 2rem;
   color: white;
+  border: none;
 }
 
 .section2 {
