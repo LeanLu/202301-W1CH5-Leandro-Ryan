@@ -408,6 +408,9 @@ body {
 }
 
 @media screen and (min-width: 700px) {
+  body {
+    padding-left: 0rem;
+  }
   .header-menu {
     justify-content: space-between;
     font-size: 20px;
@@ -525,6 +528,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
+<<<<<<< HEAD
+=======
   .special-offer {
     display: grid;
     grid-template-areas: "nav-menu title title" "destination destination destination";
@@ -707,6 +712,7 @@ body {
     align-items: center;
     padding: 0;
   }
+>>>>>>> main
   .section4 {
     display: grid;
     grid-template-rows: 30vh 30vh 30vh;
