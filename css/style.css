@@ -249,13 +249,33 @@ html {
   }
   .header-lower {
     gap: 10rem;
-    padding: 8rem 0rem;
+    padding: 8rem 0rem 15rem 0rem;
   }
   .header-lower-title__h1 {
     font-size: 4rem;
   }
   .header-lower-title__p {
     font-size: 1.2rem;
+  }
+  .header-lower-form {
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0rem 1rem 1rem 0rem;
+    gap: 3rem;
+  }
+  .header-lower-form__input {
+    flex-direction: row;
+    font-size: 1rem;
+    padding: 0rem 0rem 0rem 1.5rem;
+  }
+  .header-lower-form__submit {
+    padding: 4rem 0.8rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    width: 25%;
+  }
+  .header-lower-form__submit > input {
+    white-space: normal;
+    padding: 0rem 0.5rem 0rem 0rem;
   }
 }
 

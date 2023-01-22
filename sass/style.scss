@@ -96,7 +96,6 @@ html {
     font-family: $font-family-rubik;
     justify-content: space-between;
     align-items: center;
-    //background-color: red;
 
     &-logo {
       padding: 2rem 1rem;
@@ -249,6 +248,7 @@ html {
           align-items: center;
           justify-content: space-evenly;
           color: white;
+
           & li:hover {
             border-bottom: 3px solid #ff7757;
           }
@@ -266,9 +266,11 @@ html {
           justify-content: space-evenly;
           align-items: center;
           color: white;
+
           & li:first-child:hover {
             border-bottom: 3px solid #ff7757;
           }
+
           & li:last-child {
             background: #ff7757;
             border-radius: 12px;
@@ -277,15 +279,42 @@ html {
         }
       }
     }
+
     &-lower {
       gap: 10rem;
-      padding: 8rem 0rem;
+      padding: 8rem 0rem 15rem 0rem;
+
       &-title {
         &__h1 {
           font-size: 4rem;
         }
+
         &__p {
           font-size: 1.2rem;
+        }
+      }
+
+      &-form {
+        flex-direction: row;
+        align-items: center;
+        border-radius: 0rem 1rem 1rem 0rem;
+        gap: 3rem;
+
+        &__input {
+          flex-direction: row;
+          font-size: 1rem;
+          padding: 0rem 0rem 0rem 1.5rem;
+        }
+
+        &__submit {
+          padding: 4rem 0.8rem;
+          border-radius: 0rem 1rem 1rem 0rem;
+          width: 25%;
+
+          & > input {
+            white-space: normal;
+            padding: 0rem 0.5rem 0rem 0rem;
+          }
         }
       }
     }
