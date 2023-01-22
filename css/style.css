@@ -147,6 +147,9 @@ body {
   body .section2 .section2-allimages__photo3 {
     padding-top: 40px;
   }
+  body .section2__paragraph {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
