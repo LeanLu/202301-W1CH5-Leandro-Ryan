@@ -224,6 +224,7 @@ html {
 
     border: 3px solid #ff7757;
   }
+
   &__paragraph {
     width: 288px;
     height: 63px;
@@ -236,9 +237,12 @@ html {
 
     color: #767e86;
   }
+  &__desktopbutton {
+    display: none;
+  }
   &__ul {
     display: flex;
-    gap: 10px;
+    gap: 2rem;
     justify-content: center;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -393,6 +397,7 @@ html {
         display: flex;
         justify-content: space-between;
         gap: 30px;
+        padding-top: 0px;
       }
       &__photo3 {
         padding-top: 40px;
@@ -400,6 +405,28 @@ html {
     }
     &__paragraph {
       display: flex;
+      flex-direction: row;
+      width: auto;
+      align-items: center;
+    }
+    &__title {
+      width: auto;
+      height: 50px;
+    }
+    &__line {
+      border: 2px solid #ff7757;
+    }
+    &__ul {
+      display: none;
+    }
+    &__desktopbutton {
+      display: flex;
+      gap: 2rem;
+    }
+    .section2-p_buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }

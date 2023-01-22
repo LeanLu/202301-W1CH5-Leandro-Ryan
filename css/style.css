@@ -212,9 +212,12 @@ html {
   line-height: 21px;
   color: #767e86;
 }
+.section2__desktopbutton {
+  display: none;
+}
 .section2__ul {
   display: flex;
-  gap: 10px;
+  gap: 2rem;
   justify-content: center;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -341,12 +344,35 @@ html {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    padding-top: 0px;
   }
   .section2 .section2-allimages__photo3 {
     padding-top: 40px;
   }
   .section2__paragraph {
     display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+  }
+  .section2__title {
+    width: auto;
+    height: 50px;
+  }
+  .section2__line {
+    border: 2px solid #ff7757;
+  }
+  .section2__ul {
+    display: none;
+  }
+  .section2__desktopbutton {
+    display: flex;
+    gap: 2rem;
+  }
+  .section2 .section2-p_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
