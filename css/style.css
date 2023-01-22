@@ -78,15 +78,104 @@ h6 {
 ol,
 ul {
   list-style: none;
+  padding-inline-start: 0px;
 }
 
-@media screen and (min-width: 320px) {
-  body {
-    background-color: blue;
-  }
-}
 html {
   font-family: "Playfair Display", serif;
+}
+
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Travellian template.png");
+}
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  font-family: "Rubik", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-menu-logo {
+  padding: 2rem 1rem;
+}
+.header-menu-burger-menu {
+  padding: 2rem 1rem;
+}
+.header-menu-nav {
+  display: none;
+}
+.header-menu-login {
+  display: none;
+}
+.header-lower {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 5rem 0rem;
+}
+.header-lower-title {
+  color: #ffffff;
+}
+.header-lower-title__h1 {
+  font-family: "Playfair Display";
+  font-size: 2.2rem;
+  padding: 0rem 1rem;
+}
+.header-lower-title__p {
+  padding: 0rem 1rem;
+  font-family: "Rubik", sans-serif;
+}
+.header-lower-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: white;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem;
+}
+.header-lower-form__input {
+  font-family: "Rubik", sans-serif;
+  color: #767e86;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1.5rem;
+  width: 100%;
+}
+.header-lower-form__input > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.5rem;
+}
+.header-lower-form__input > div > input {
+  border: none;
+  border-bottom: 1px solid #767e86;
+  width: 100%;
+}
+.header-lower-form__submit {
+  font-family: "Playfair Display", serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #ff7757;
+  border-radius: 0rem 0rem 1rem 1rem;
+  padding: 2rem 0rem;
+}
+.header-lower-form__submit > input {
+  background-color: #ff7757;
+  font-size: 2rem;
+  color: white;
+  border: none;
 }
 
 .section2 {
@@ -114,6 +203,80 @@ html {
   font-size: 18px;
   line-height: 21px;
   color: #767e86;
+}
+
+@media screen and (min-width: 700px) {
+  .header-menu {
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .header-menu-burger-menu {
+    display: none;
+  }
+  .header-menu-nav {
+    display: flex;
+  }
+  .header-menu-nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+  }
+  .header-menu-nav-menu li:hover {
+    border-bottom: 3px solid #ff7757;
+  }
+  .header-menu-login {
+    display: flex;
+    padding: 2rem 1rem;
+  }
+  .header-menu-login-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+  }
+  .header-menu-login-menu li:first-child:hover {
+    border-bottom: 3px solid #ff7757;
+  }
+  .header-menu-login-menu li:last-child {
+    background: #ff7757;
+    border-radius: 12px;
+    padding: 20px 32px;
+  }
+  .header-lower {
+    gap: 10rem;
+    padding: 8rem 0rem 15rem 0rem;
+  }
+  .header-lower-title__h1 {
+    font-size: 4rem;
+  }
+  .header-lower-title__p {
+    font-size: 1.2rem;
+  }
+  .header-lower-form {
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0rem 1rem 1rem 0rem;
+    gap: 3rem;
+  }
+  .header-lower-form__input {
+    flex-direction: row;
+    font-size: 1rem;
+    padding: 0rem 0rem 0rem 1.5rem;
+  }
+  .header-lower-form__submit {
+    padding: 4rem 0.8rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    width: 25%;
+  }
+  .header-lower-form__submit > input {
+    white-space: normal;
+    padding: 0rem 0.5rem 0rem 0rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

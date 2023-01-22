@@ -71,12 +71,7 @@ h6 {
 ol,
 ul {
   list-style: none;
-}
-
-@media screen and (min-width: 320px) {
-  body {
-    background-color: blue;
-  }
+  padding-inline-start: 0px;
 }
 
 $primary-color-salmon: #ff7757;
@@ -89,6 +84,115 @@ $font-family-rubik: "Rubik", sans-serif;
 
 html {
   font-family: $font-family-playfair;
+}
+
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Travellian\ template.png");
+
+  &-menu {
+    display: flex;
+    flex-direction: row;
+    font-family: $font-family-rubik;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+      padding: 2rem 1rem;
+    }
+
+    &-burger-menu {
+      padding: 2rem 1rem;
+    }
+
+    &-nav {
+      display: none;
+    }
+
+    &-login {
+      display: none;
+    }
+  }
+
+  &-lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 5rem 0rem;
+
+    &-title {
+      color: #ffffff;
+
+      &__h1 {
+        font-family: "Playfair Display";
+        font-size: 2.2rem;
+        padding: 0rem 1rem;
+      }
+
+      &__p {
+        padding: 0rem 1rem;
+        font-family: $font-family-rubik;
+      }
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      background-color: white;
+      border-radius: 1rem;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 1rem;
+
+      &__input {
+        font-family: $font-family-rubik;
+        color: #767e86;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 1.5rem;
+        width: 100%;
+
+        & > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          gap: 0.5rem;
+
+          & > input {
+            border: none;
+            border-bottom: 1px solid #767e86;
+            width: 100%;
+          }
+        }
+      }
+
+      &__submit {
+        font-family: $font-family-playfair;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background-color: $primary-color-salmon;
+        border-radius: 0rem 0rem 1rem 1rem;
+        padding: 2rem 0rem;
+
+        & > input {
+          background-color: $primary-color-salmon;
+          font-size: 2rem;
+          color: white;
+          border: none;
+        }
+      }
+    }
+  }
 }
 
 .section2 {
@@ -121,5 +225,98 @@ html {
     line-height: 21px;
 
     color: #767e86;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    &-menu {
+      justify-content: space-between;
+      font-size: 20px;
+
+      &-burger-menu {
+        display: none;
+      }
+
+      &-nav {
+        display: flex;
+
+        &-menu {
+          display: flex;
+          flex-direction: row;
+          gap: 1.3rem;
+          align-items: center;
+          justify-content: space-evenly;
+          color: white;
+
+          & li:hover {
+            border-bottom: 3px solid #ff7757;
+          }
+        }
+      }
+
+      &-login {
+        display: flex;
+        padding: 2rem 1rem;
+
+        &-menu {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          justify-content: space-evenly;
+          align-items: center;
+          color: white;
+
+          & li:first-child:hover {
+            border-bottom: 3px solid #ff7757;
+          }
+
+          & li:last-child {
+            background: #ff7757;
+            border-radius: 12px;
+            padding: 20px 32px;
+          }
+        }
+      }
+    }
+
+    &-lower {
+      gap: 10rem;
+      padding: 8rem 0rem 15rem 0rem;
+
+      &-title {
+        &__h1 {
+          font-size: 4rem;
+        }
+
+        &__p {
+          font-size: 1.2rem;
+        }
+      }
+
+      &-form {
+        flex-direction: row;
+        align-items: center;
+        border-radius: 0rem 1rem 1rem 0rem;
+        gap: 3rem;
+
+        &__input {
+          flex-direction: row;
+          font-size: 1rem;
+          padding: 0rem 0rem 0rem 1.5rem;
+        }
+
+        &__submit {
+          padding: 4rem 0.8rem;
+          border-radius: 0rem 1rem 1rem 0rem;
+          width: 25%;
+
+          & > input {
+            white-space: normal;
+            padding: 0rem 0.5rem 0rem 0rem;
+          }
+        }
+      }
+    }
   }
 }

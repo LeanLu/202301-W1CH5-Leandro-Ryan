@@ -15,20 +15,20 @@
 <body>
 
 
-  <header>
+  <header class="header">
 
-    <div>
+    <div class="header-menu">
 
-      <div style="background-color: black;">
+      <div class="header-menu-logo">
         <img src="images/logo.svg" alt="">
       </div>
 
-      <section style="background-color: black;">
+      <section class="header-menu-burger-menu">
         <img src="images/burger-icon.svg" alt="">
       </section>
 
-      <nav>
-        <ul>
+      <nav class="header-menu-nav">
+        <ul class="header-menu-nav-menu">
           <li>Home</li>
           <li>Explore</li>
           <li>Travel</li>
@@ -37,8 +37,8 @@
         </ul>
       </nav>
 
-      <section>
-        <ul>
+      <section class="header-menu-login">
+        <ul class="header-menu-login-menu">
           <li>Login</li>
           <li>Sign up</li>
         </ul>
@@ -47,47 +47,58 @@
     </div>
 
 
+    <div class="header-lower">
 
-    <div>
-      <h1>
-        <div>
-          Start your unforgettable
-        </div>
-        <div>
-          journey with us.
-        </div>
-      </h1>
+      <div class="header-lower-title">
+        <h1 class="header-lower-title__h1">
+          <div class="header-lower-title__h1__line1">
+            Start your unforgettable
+          </div>
+          <div class="header-lower-title__h1__line2">
+            journey with us.
+          </div>
+        </h1>
 
-      <p>
-        The best travel for your journey begins now
-      </p>
-    </div>
-
-
-    <form>
-      <div>
-        <label for="destination">DESTINATION</label>
-        <input type="text">
-
-        <label for="person">PERSON</label>
-        <input type="text">
-
-        <label for="check-in">CHECK IN</label>
-        <input type="text">
-
-        <label for="check-out">CHECK OUT</label>
-        <input type="text">
+        <p class="header-lower-title__p">
+          The best travel for your journey begins now
+        </p>
       </div>
 
-      <nav>
-        <p>Book Now</p>
-        <img src="images/arrow-bookNow.svg" alt="Arrow">
-      </nav>
-    </form>
 
+      <form class="header-lower-form">
 
+        <div class="header-lower-form__input">
 
+          <div>
+            <label for="destination">DESTINATION</label>
+            <input type="text">
+          </div>
 
+          <div>
+            <label for="person">PERSON</label>
+            <input type="text">
+          </div>
+
+          <div>
+            <label for="check-in">CHECK IN</label>
+            <input type="text">
+          </div>
+
+          <div>
+            <label for="check-out">CHECK OUT</label>
+            <input type="text">
+          </div>
+
+        </div>
+
+        <div class="header-lower-form__submit">
+          <input type="submit" value="Book Now">
+          <img src="images/arrow-bookNow.svg" alt="Arrow">
+        </div>
+
+      </form>
+
+    </div>
 
   </header>
 
@@ -100,7 +111,6 @@
 
   <main>
 
-    <section>Form</section>
     <section class="section2">
       <h1>Popular Destinations</h1>
       <p>Most popular destinations around the world, from historical places to natural wonders.</p>
