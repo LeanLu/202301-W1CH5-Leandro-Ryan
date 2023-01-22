@@ -184,8 +184,7 @@ html {
   flex-direction: column;
   gap: 30px;
 }
-
-.section2 h1 {
+.section2__title {
   width: 288px;
   height: 106px;
   font-family: "Playfair Display", serif;
@@ -195,7 +194,15 @@ html {
   line-height: 53px;
   color: #172432;
 }
-.section2 p {
+.section2 .section2-allimages__hidden {
+  display: none;
+}
+.section2__line {
+  width: 227px;
+  height: 0px;
+  border: 3px solid #ff7757;
+}
+.section2__paragraph {
   width: 288px;
   height: 63px;
   font-family: "Rubik", sans-serif;
@@ -204,6 +211,14 @@ html {
   font-size: 18px;
   line-height: 21px;
   color: #767e86;
+}
+.section2__ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 0px;
 }
 
 .special-offer {
@@ -316,6 +331,22 @@ html {
   .header-lower-form__submit > input {
     white-space: normal;
     padding: 0rem 0.5rem 0rem 0rem;
+  }
+  .section2 .section2-allimages {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .section2 .section2-allimages__hidden {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .section2 .section2-allimages__photo3 {
+    padding-top: 40px;
+  }
+  .section2__paragraph {
+    display: flex;
   }
 }
 
