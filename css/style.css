@@ -188,6 +188,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 5rem 0rem;
 }
 .section2__title {
   width: 288px;
@@ -255,13 +256,16 @@ body {
   color: #767e86;
   padding: 2rem 0rem 0rem 0rem;
 }
+.special-offer-destination-lisbon {
+  background-color: #fff8f1;
+}
 .special-offer-destination-lisbon h3 {
   color: #767e86;
   font-family: "Mulish";
   font-size: 1.7rem;
   padding: 0.5rem 0rem;
 }
-.special-offer-destination-lisbon div {
+.special-offer-destination-lisbon__star {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -273,16 +277,21 @@ body {
 }
 .special-offer-destination-lisbon__price {
   display: flex;
+  flex-direction: column;
+}
+.special-offer-destination-lisbon__price div {
+  display: flex;
   flex-direction: row;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
   font-family: "Rubik", sans-serif;
   padding: 0rem 0rem 1rem 0rem;
 }
-.special-offer-destination-lisbon__price p {
+.special-offer-destination-lisbon__price div p {
   color: #767e86;
   font-size: 1rem;
 }
-.special-offer-destination-lisbon__price span {
+.special-offer-destination-lisbon__price div div {
   color: #ff7757;
   font-size: 2rem;
   padding: 0rem 0rem 0rem 0.5rem;
@@ -296,6 +305,7 @@ body {
   font-family: "Rubik", sans-serif;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .special-offer-destination-athens {
   display: none;
@@ -446,6 +456,7 @@ body {
     font-family: "Rubik", sans-serif;
     display: flex;
     justify-content: center;
+    cursor: pointer;
     width: 10rem;
   }
   .header-lower {
@@ -517,6 +528,191 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
+<<<<<<< HEAD
+=======
+  .special-offer {
+    display: grid;
+    grid-template-areas: "nav-menu title title" "destination destination destination";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .special-offer-nav-menu {
+    grid-area: nav-menu;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+  }
+  .special-offer-title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .special-offer-title h2 {
+    font-size: 3.5rem;
+  }
+  .special-offer-title p {
+    padding: 1rem 0rem 0rem 0rem;
+    font-size: 1.4rem;
+  }
+  .special-offer-destination {
+    grid-area: destination;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .special-offer-destination-lisbon h3 {
+    font-size: 1.4rem;
+    padding: 2rem 0rem 0.7rem 0rem;
+  }
+  .special-offer-destination-lisbon__price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .special-offer-destination-lisbon__price div {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .special-offer-destination-athens {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff8f1;
+  }
+  .special-offer-destination-athens h3 {
+    color: #767e86;
+    font-family: "Mulish";
+    font-size: 1.7rem;
+    padding: 0.5rem 0rem;
+  }
+  .special-offer-destination-athens__star {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .special-offer-destination-athens__description {
+    font-family: "Rubik", sans-serif;
+    color: #172432;
+    padding: 2rem 0rem;
+  }
+  .special-offer-destination-athens__price {
+    display: flex;
+    flex-direction: column;
+  }
+  .special-offer-destination-athens__price div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Rubik", sans-serif;
+    padding: 0rem 0rem 1rem 0rem;
+  }
+  .special-offer-destination-athens__price div p {
+    color: #767e86;
+    font-size: 1rem;
+  }
+  .special-offer-destination-athens__price div div {
+    color: #ff7757;
+    font-size: 2rem;
+    padding: 0rem 0rem 0rem 0.5rem;
+  }
+  .special-offer-destination-athens nav {
+    background: #ff7757;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    width: 8rem;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .special-offer-destination-athens h3 {
+    font-size: 1.4rem;
+    padding: 2rem 0rem 0.7rem 0rem;
+  }
+  .special-offer-destination-athens__price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .special-offer-destination-athens__price div {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .special-offer-destination-rome {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff8f1;
+  }
+  .special-offer-destination-rome h3 {
+    color: #767e86;
+    font-family: "Mulish";
+    font-size: 1.7rem;
+    padding: 0.5rem 0rem;
+  }
+  .special-offer-destination-rome__star {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .special-offer-destination-rome__description {
+    font-family: "Rubik", sans-serif;
+    color: #172432;
+    padding: 2rem 0rem;
+  }
+  .special-offer-destination-rome__price {
+    display: flex;
+    flex-direction: column;
+  }
+  .special-offer-destination-rome__price div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Rubik", sans-serif;
+    padding: 0rem 0rem 1rem 0rem;
+  }
+  .special-offer-destination-rome__price div p {
+    color: #767e86;
+    font-size: 1rem;
+  }
+  .special-offer-destination-rome__price div div {
+    color: #ff7757;
+    font-size: 2rem;
+    padding: 0rem 0rem 0rem 0.5rem;
+  }
+  .special-offer-destination-rome nav {
+    background: #ff7757;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    width: 8rem;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .special-offer-destination-rome h3 {
+    font-size: 1.4rem;
+    padding: 2rem 0rem 0.7rem 0rem;
+  }
+  .special-offer-destination-rome__price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .special-offer-destination-rome__price div {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+>>>>>>> main
   .section4 {
     display: grid;
     grid-template-rows: 30vh 30vh 30vh;
