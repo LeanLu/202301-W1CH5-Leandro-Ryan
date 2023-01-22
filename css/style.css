@@ -229,25 +229,68 @@ html {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
   padding: 1rem;
   margin: 5rem 0rem;
 }
 .special-offer-title {
   font-size: 1.5rem;
+  width: 100%;
 }
 .special-offer-title h2 {
-  text-decoration-line: underline;
-  text-decoration-color: #ff7757;
-  text-decoration-style: solid;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 1rem;
-  padding: 0rem 0rem 2rem 0rem;
+  padding: 0rem 0rem 1rem 0rem;
   color: #172432;
+}
+.special-offer-title div {
+  border-bottom: 3px solid #ff7757;
+  width: 227px;
 }
 .special-offer-title p {
   font-size: 1.2rem;
   color: #767e86;
+  padding: 2rem 0rem 0rem 0rem;
+}
+.special-offer-destination-lisbon h3 {
+  color: #767e86;
+  font-family: "Mulish";
+  font-size: 1.7rem;
+  padding: 0.5rem 0rem;
+}
+.special-offer-destination-lisbon div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.special-offer-destination-lisbon__description {
+  font-family: "Rubik", sans-serif;
+  color: #172432;
+  padding: 2rem 0rem;
+}
+.special-offer-destination-lisbon__price {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-family: "Rubik", sans-serif;
+  padding: 0rem 0rem 1rem 0rem;
+}
+.special-offer-destination-lisbon__price p {
+  color: #767e86;
+  font-size: 1rem;
+}
+.special-offer-destination-lisbon__price span {
+  color: #ff7757;
+  font-size: 2rem;
+  padding: 0rem 0rem 0rem 0.5rem;
+}
+.special-offer-destination-lisbon nav {
+  background: #ff7757;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  width: 8rem;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 .special-offer-destination-athens {
   display: none;
@@ -302,8 +345,14 @@ html {
   }
   .header-menu-login-menu li:last-child {
     background: #ff7757;
-    border-radius: 12px;
-    padding: 20px 32px;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    width: 8rem;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 10rem;
   }
   .header-lower {
     gap: 10rem;
