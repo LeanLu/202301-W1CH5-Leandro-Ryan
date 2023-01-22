@@ -15,20 +15,20 @@
 <body>
 
 
-  <header>
+  <header class="header">
 
-    <div>
+    <div class="header-menu">
 
-      <div style="background-color: black;">
+      <div class="header-menu-logo">
         <img src="images/logo.svg" alt="">
       </div>
 
-      <section style="background-color: black;">
+      <section class="header-menu-burger-menu">
         <img src="images/burger-icon.svg" alt="">
       </section>
 
-      <nav>
-        <ul>
+      <nav class="header-menu-nav">
+        <ul class="header-menu-nav-menu">
           <li>Home</li>
           <li>Explore</li>
           <li>Travel</li>
@@ -37,8 +37,8 @@
         </ul>
       </nav>
 
-      <section>
-        <ul>
+      <section class="header-menu-login">
+        <ul class="header-menu-login-menu">
           <li>Login</li>
           <li>Sign up</li>
         </ul>
@@ -47,78 +47,152 @@
     </div>
 
 
+    <div class="header-lower">
 
-    <div>
-      <h1>
-        <div>
-          Start your unforgettable
-        </div>
-        <div>
-          journey with us.
-        </div>
-      </h1>
+      <div class="header-lower-title">
+        <h1 class="header-lower-title__h1">
+          <div class="header-lower-title__h1__line1">
+            Start your unforgettable
+          </div>
+          <div class="header-lower-title__h1__line2">
+            journey with us.
+          </div>
+        </h1>
 
-      <p>
-        The best travel for your journey begins now
-      </p>
-    </div>
-
-
-    <form>
-      <div>
-        <label for="destination">DESTINATION</label>
-        <input type="text">
-
-        <label for="person">PERSON</label>
-        <input type="text">
-
-        <label for="check-in">CHECK IN</label>
-        <input type="text">
-
-        <label for="check-out">CHECK OUT</label>
-        <input type="text">
+        <p class="header-lower-title__p">
+          The best travel for your journey begins now
+        </p>
       </div>
 
-      <nav>
-        <p>Book Now</p>
-        <img src="images/arrow-bookNow.svg" alt="Arrow">
-      </nav>
-    </form>
 
+      <form class="header-lower-form">
 
+        <div class="header-lower-form__input">
 
+          <div>
+            <label for="destination">DESTINATION</label>
+            <input type="text">
+          </div>
 
+          <div>
+            <label for="person">PERSON</label>
+            <input type="text">
+          </div>
+
+          <div>
+            <label for="check-in">CHECK IN</label>
+            <input type="text">
+          </div>
+
+          <div>
+            <label for="check-out">CHECK OUT</label>
+            <input type="text">
+          </div>
+
+        </div>
+
+        <div class="header-lower-form__submit">
+          <input type="submit" value="Book Now">
+          <img src="images/arrow-bookNow.svg" alt="Arrow">
+        </div>
+
+      </form>
+
+    </div>
 
   </header>
 
 
 
-
-
-
-
-
   <main>
 
-    <section>Form</section>
     <section class="section2">
-      <h1 class="section2__title">Popular Destinations</h1>
-      <span class="section2__line"> </span>
-      <p class="section2__paragraph">Most popular destinations around the world, from historical places to natural
-        wonders.</p>
-      <span class="section2-allimages">
-        <img src="images/photo1.svg" alt="Washintong D.C." class="imgWash" width="497" class="section2-allimages__img">
-        <span class="section2-allimages__hidden">
-          <img src="images/asd.svg" alt="asd" height="661" width="390">
-          <img src="images/asd2.svg" alt="asd1" height="580" width="390" class="section2-allimages_photo3">
-        </span>
-      </span>
-      <ul class="section2__ul">
-        <li class="section2__list"><img src="images/chevron-down.png" alt="Boton1"></li>
-        <li class="section2__list"><img src="images/chevron-down1.png" alt="Boton2"></li>
+      <h1>Popular Destinations</h1>
+      <p>Most popular destinations around the world, from historical places to natural wonders.</p>
+      <img src="images/photo1.svg" alt="Washintong D.C." class="imgWash" height="300xp " width="">
+      <ul>
+        <li><input type="submit" name="buttonSection2" value="<"></li>
+        <li><input type="submit" name="buttonSection2" value=">"></li>
       </ul>
     </section>
-    <section>Special offer</section>
+
+
+
+    <section class="special-offer">
+
+      <div class="special-offer-title">
+        <h2>Special Offer</h2>
+        <p>Check out our special offer and discounts</p>
+      </div>
+
+      <div class="special-offer-destination">
+        <div class="special-offer-destination-lisbon">
+          <img src="images/lisbon.png" alt="Lisbon landscape" max-height="286px" max-width="437px">
+          <h3>Lisbon, Portugal</h3>
+          <div>
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+          </div>
+
+          <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance.
+            Passage and
+            going through the cites of the world in classical literature.</p>
+          <p>From <span>€500</span></p>
+          <nav>DETAILS</nav>
+        </div>
+
+        <div class="special-offer-destination-athens">
+          <img src="images/athens.png" alt="Athens landscape" max-height="286px" max-width="437px">
+          <h3>Athens, Greece</h3>
+          <div>
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+          </div>
+          <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance.
+            Passage and
+            going through the cites of the world in classical literature.</p>
+          <p>From <span>€800</span></p>
+          <nav>DETAILS</nav>
+        </div>
+
+        <div class="special-offer-destination-rome">
+          <img src="images/rome.png" alt="Rome landscape" max-height="286px" max-width="437px">
+          <h3>Rome, Italy</h3>
+          <div>
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+            <img src="images/star.png" alt="star">
+          </div>
+          <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance.
+            Passage and
+            going through the cites of the world in classical literature.</p>
+          <p>From <span>€750</span></p>
+          <nav>DETAILS</nav>
+        </div>
+      </div>
+
+      <div class="special-offer-nav-menu">
+        <img src="images/chevron-down.png" alt="previous button">
+        <img src="images/chevron-up.png" alt="next button">
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
     <section>Our blog</section>
     <section>Trip planners</section>
     <section>Travellers experience</section>
