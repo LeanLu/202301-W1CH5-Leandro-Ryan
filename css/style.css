@@ -91,8 +91,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/Travellian template.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Travellian template.png");
 }
 .header-menu {
   display: flex;
@@ -492,6 +491,322 @@ body {
   width: 100px;
   height: 0px;
   border: 2px solid #ff7757;
+}
+
+.trip-planners {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+  padding: 1rem;
+  margin: 5rem 0rem;
+  width: 100%;
+}
+.trip-planners-header {
+  font-size: 1.5rem;
+  width: 100%;
+}
+.trip-planners-header__title {
+  padding: 0rem 0rem 1rem 0rem;
+  color: #172432;
+}
+.trip-planners-header div {
+  border-bottom: 3px solid #ff7757;
+  width: 227px;
+}
+.trip-planners-header__paragraph {
+  font-size: 1.2rem;
+  color: #767e86;
+  padding: 2rem 0rem 0rem 0rem;
+}
+.trip-planners-nav {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.trip-planners-nav div {
+  background: #ff7757;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  width: 8rem;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: auto;
+}
+.trip-planners-destinations {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.trip-planners-destinations-rome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.trip-planners-destinations-rome-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.trip-planners-destinations-rome-details__tour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 288px;
+  font-family: "Rubik", sans-serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-rome-details__tour h4 {
+  font-size: 1.2rem;
+}
+.trip-planners-destinations-rome-details__tour span {
+  font-size: 1rem;
+}
+.trip-planners-destinations-rome-details__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 288px;
+  font-family: "Playfair Display", serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-rome-details__title h3 {
+  font-size: 1.8rem;
+}
+.trip-planners-destinations-rome-details__punctuation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 288px;
+  font-family: "Rubik", sans-serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-rome-details__punctuation div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.trip-planners-destinations-rome-details__punctuation span {
+  font-size: 1rem;
+}
+.trip-planners-destinations-paris {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.trip-planners-destinations-paris-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.trip-planners-destinations-paris-details__tour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 288px;
+  font-family: "Rubik", sans-serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-paris-details__tour h4 {
+  font-size: 1.2rem;
+}
+.trip-planners-destinations-paris-details__tour span {
+  font-size: 1rem;
+}
+.trip-planners-destinations-paris-details__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 288px;
+  font-family: "Playfair Display", serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-paris-details__title h3 {
+  font-size: 1.8rem;
+}
+.trip-planners-destinations-paris-details__punctuation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 288px;
+  font-family: "Rubik", sans-serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-paris-details__punctuation div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.trip-planners-destinations-paris-details__punctuation span {
+  font-size: 1rem;
+}
+.trip-planners-destinations-barcelona {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.trip-planners-destinations-barcelona-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.trip-planners-destinations-barcelona-details__tour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 288px;
+  font-family: "Rubik", sans-serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-barcelona-details__tour h4 {
+  font-size: 1.2rem;
+}
+.trip-planners-destinations-barcelona-details__tour span {
+  font-size: 1rem;
+}
+.trip-planners-destinations-barcelona-details__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 288px;
+  font-family: "Playfair Display", serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-barcelona-details__title h3 {
+  font-size: 1.8rem;
+}
+.trip-planners-destinations-barcelona-details__punctuation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 288px;
+  font-family: "Rubik", sans-serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-barcelona-details__punctuation div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.trip-planners-destinations-barcelona-details__punctuation span {
+  font-size: 1rem;
+}
+.trip-planners-destinations-budapest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.trip-planners-destinations-budapest-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.trip-planners-destinations-budapest-details__tour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 288px;
+  font-family: "Rubik", sans-serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-budapest-details__tour h4 {
+  font-size: 1.2rem;
+}
+.trip-planners-destinations-budapest-details__tour span {
+  font-size: 1rem;
+}
+.trip-planners-destinations-budapest-details__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 288px;
+  font-family: "Playfair Display", serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-budapest-details__title h3 {
+  font-size: 1.8rem;
+}
+.trip-planners-destinations-budapest-details__punctuation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 288px;
+  font-family: "Rubik", sans-serif;
+  color: #172432;
+  padding: 0rem 0.7rem;
+}
+.trip-planners-destinations-budapest-details__punctuation div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.trip-planners-destinations-budapest-details__punctuation span {
+  font-size: 1rem;
+}
+.trip-planners-nav-menu {
+  display: none;
 }
 
 @media screen and (min-width: 700px) {
