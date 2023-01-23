@@ -172,6 +172,81 @@ $font-family-rubik: "Rubik", sans-serif;
   }
 }
 
+@mixin trip-planners-pictures-template {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    &__tour {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 288px;
+      font-family: $font-family-rubik;
+      color: #172432;
+      padding: 0rem 0.7rem;
+
+      h4 {
+        font-size: 1.2rem;
+      }
+
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 288px;
+      font-family: $font-family-playfair;
+      color: #172432;
+      padding: 0rem 0.7rem;
+
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__punctuation {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 288px;
+      font-family: $font-family-rubik;
+      color: #172432;
+      padding: 0rem 0.7rem;
+
+      & div {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      & span {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
 html {
   font-family: $font-family-playfair;
 }
@@ -448,6 +523,7 @@ body {
     gap: 2rem;
   }
 }
+
 .section4 {
   display: flex;
   flex-direction: column;
@@ -643,6 +719,78 @@ body {
 
       border: 2px solid #ff7757;
     }
+  }
+}
+
+.trip-planners {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+  padding: 1rem;
+  margin: 5rem 0rem;
+  width: 100%;
+
+  &-header {
+    font-size: 1.5rem;
+    width: 100%;
+
+    &__title {
+      padding: 0rem 0rem 1rem 0rem;
+      color: #172432;
+    }
+
+    & div {
+      border-bottom: 3px solid $primary-color-salmon;
+      width: 227px;
+    }
+
+    &__paragraph {
+      font-size: 1.2rem;
+      color: #767e86;
+      padding: 2rem 0rem 0rem 0rem;
+    }
+  }
+
+  &-nav {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    div {
+      @include orange-button();
+      width: auto;
+    }
+  }
+
+  &-destinations {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+    &-rome {
+      @include trip-planners-pictures-template();
+    }
+
+    &-paris {
+      @include trip-planners-pictures-template();
+    }
+
+    &-barcelona {
+      @include trip-planners-pictures-template();
+    }
+
+    &-budapest {
+      @include trip-planners-pictures-template();
+    }
+  }
+
+  &-nav-menu {
+    display: none;
   }
 }
 
@@ -650,6 +798,7 @@ body {
   body {
     padding-left: 0rem;
   }
+
   .header {
     &-menu {
       justify-content: space-between;
