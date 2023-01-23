@@ -91,7 +91,8 @@ body {
 }
 
 .header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Travellian template.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/Travellian template.png");
 }
 .header-menu {
   display: flex;
@@ -407,6 +408,92 @@ body {
   border: 2px solid #ff7757;
 }
 
+.section4 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section4 .section4-block1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section4 .section4-block1__title {
+  width: 159px;
+  height: 53px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+}
+.section4 .section4-block1__line {
+  width: 227px;
+  height: 0px;
+  border: 3px solid #ff7757;
+}
+.section4 .section4-block1__paragraph {
+  width: 288px;
+  height: 42px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #767e86;
+}
+.section4__image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px;
+  gap: 4px;
+  width: 288px;
+  height: 314px;
+}
+.section4__secondTitle {
+  width: 288px;
+  height: 106px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+}
+.section4__secondParagraph {
+  width: 288px;
+  height: 672px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 42px;
+  /* or 233% */
+  color: #172432;
+}
+.section4 .section4-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.section4 .section4-menu__paragraph {
+  width: 118px;
+  height: 52px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 52px;
+}
+.section4 .section4-menu__images {
+  box-sizing: border-box;
+  width: 100px;
+  height: 0px;
+  border: 2px solid #ff7757;
+}
+
 @media screen and (min-width: 700px) {
   body {
     padding-left: 0rem;
@@ -528,8 +615,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
-<<<<<<< HEAD
-=======
   .special-offer {
     display: grid;
     grid-template-areas: "nav-menu title title" "destination destination destination";
@@ -712,7 +797,6 @@ body {
     align-items: center;
     padding: 0;
   }
->>>>>>> main
   .section4 {
     display: grid;
     grid-template-rows: 30vh 30vh 30vh;
